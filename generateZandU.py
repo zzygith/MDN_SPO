@@ -2,32 +2,32 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import multivariate_normal
 
-# np.random.seed(42)
-# n_samples=2000
-# # 混合分布的权重
-# weights = [0.5, 0.5]
+np.random.seed(42)
+n_samples=2000
+# 混合分布的权重
+weights = [0.5, 0.5]
 
-# # 定义第一个高斯分布的参数：均值和协方差矩阵
-# mean1 = [-1, -1]
-# cov1 = [[1, 0.8],
-#         [0.8, 1]]
-# # 定义第二个高斯分布的参数
-# mean2 = [1, 5]
-# cov2 = [[1, -0.7],
-#         [-0.7, 1]]
+# 定义第一个高斯分布的参数：均值和协方差矩阵
+mean1 = [-1, 0]
+cov1 = [[1, 0.8],
+        [0.8, 1]]
+# 定义第二个高斯分布的参数
+mean2 = [2, 3]
+cov2 = [[1, -0.7],
+        [-0.7, 1]]
 
-# # 根据权重确定每个分布生成的样本数
-# n_samples1 = int(n_samples * weights[0])
-# n_samples2 = n_samples - n_samples1
+# 根据权重确定每个分布生成的样本数
+n_samples1 = int(n_samples * weights[0])
+n_samples2 = n_samples - n_samples1
 
-# # 分别从两个高斯分布中生成样本
-# samples1 = np.random.multivariate_normal(mean1, cov1, n_samples1)
-# samples2 = np.random.multivariate_normal(mean2, cov2, n_samples2)
+# 分别从两个高斯分布中生成样本
+samples1 = np.random.multivariate_normal(mean1, cov1, n_samples1)
+samples2 = np.random.multivariate_normal(mean2, cov2, n_samples2)
 
-# # 合并样本数据
-# samples = np.vstack((samples1, samples2))
+# 合并样本数据
+samples = np.vstack((samples1, samples2))
 
-# np.savetxt('samplesZandU.txt', samples)
+np.savetxt('samplesZandU.txt', samples)
 
 #########################################################################
 #########################################################################
@@ -35,11 +35,11 @@ from scipy.stats import multivariate_normal
 # 混合分布的权重
 weights = [0.5, 0.5]
 # 定义第一个高斯分布的参数：均值和协方差矩阵
-mean1 = [-1, -1]
+mean1 = [-1, 0]
 cov1 = [[1, 0.8],
         [0.8, 1]]
 # 定义第二个高斯分布的参数
-mean2 = [1, 5]
+mean2 = [2, 3]
 cov2 = [[1, -0.7],
         [-0.7, 1]]
 

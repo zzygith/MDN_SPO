@@ -121,4 +121,4 @@ combined = np.column_stack((allZlist, allUlist, optimalX1, optimalX2))
 # 保存为 CSV 文件
 # fmt 可以指定小数位，比如保留 3 位小数： "%.3f"
 np.savetxt("samplesZandUandXopt.csv", combined, delimiter=",", fmt="%.3f", 
-           header="col1,col2,col3,col4", comments="")
+           header="z,u,x1,x2", comments="")

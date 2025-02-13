@@ -86,7 +86,7 @@ for modelNum in range (1,11,1):
     print("Using device:", device)
     torch.manual_seed(0)
 
-    x_data, y_data = generate_data(sampleNumber=500)
+    x_data, y_data = generate_data(sampleNumber=450)
 
     x_data, y_data = x_data.to(device), y_data.to(device)
 

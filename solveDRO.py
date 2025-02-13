@@ -1,12 +1,12 @@
 from scipy.optimize import linprog
 
-w1_0=0.66 
-w2_0=0.34
-mu1_0=6.06
-mu2_0=2.40
-sigma1_0=0.69
-sigma2_0=0.80
-epsilon=1.02
+# w1_0=0.66 
+# w2_0=0.34
+# mu1_0=6.06
+# mu2_0=2.40
+# sigma1_0=0.69
+# sigma2_0=0.80
+# epsilon=1.02
 
 def solveDROFunc(w1_0,w2_0,mu1_0,mu2_0,sigma1_0,sigma2_0,epsilon):
 

@@ -2,9 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import multivariate_normal
 
-np.random.seed(42)
-n_samples=300
-noise_num = 200
+np.random.seed(51)
+# n_samples=300
+# noise_num = 200
+# n_samples=500
+# noise_num = 0
+n_samples = 400
+noise_num = 100
 # 混合分布的权重
 weights = [0.5, 0.5]
 
